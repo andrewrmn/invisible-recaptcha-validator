@@ -1,8 +1,8 @@
 # Invisible Recaptcha Server-Side Validator
-Simple Express Server for invisible reCaptcha server-side validation. Works great for static websites, in my case — a Jekyll website hosted on GitHub Pages. 
+Simple Express Server for invisible reCaptcha server-side validation. Works nicely for static websites, in my case — a Jekyll website hosted on GitHub Pages. 
 
 
-## Server-Side Instructions
+## Instructions
 1. Register your site/ get your reCaptcha keys [here](https://www.google.com/recaptcha)
 2. Create a new [Heroku App](https://dashboard.heroku.com/apps)
 3. In your new Heroku App, go to settings and create a new Config Var called RECAPTCHA_SECRET and enter your secret key in the value field
@@ -13,8 +13,7 @@ Simple Express Server for invisible reCaptcha server-side validation. Works grea
 
 ## Client-Side Instructions
 1. Paste this snippet in the `head` of your html template: `<script src='https://www.google.com/recaptcha/api.js'></script>`
-2. Choose your [method for integration](https://developers.google.com/recaptcha/docs/invisible#explicit_render). I ultimately went with the 'Programmatically invoke the challenge
-' method to have control over when reCaptcha verification happens (I needed it to happen after the form field validation).
+2. Choose your [method for integration](https://developers.google.com/recaptcha/docs/invisible#explicit_render). I ultimately went with the 'Programmatically invoke the challenge' method to have control over when the reCaptcha validation happens (I needed it to happen after the form field validation).
 3. Whichever method you choose, set your `callback-funtion` to `onSubmit`.
 4. Here is what your onSubmit funtion should look like:
 
