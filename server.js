@@ -28,8 +28,8 @@ app.post('/', (req, res) => {
     return res.json({"success": false, "msg":"Please select captcha"});
   }
 
-  // Secret Key from Heroku Config Variable
-  const secretKey = process.env.recaptcha;
+  // Secret Key from Heroku Config Variable 'RECAPTCHA_SECRET'
+  const secretKey = process.env.RECAPTCHA_SECRET;
 
   console.log(secretKey);
 
