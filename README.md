@@ -29,7 +29,7 @@ Simple Express Server for invisible reCaptcha server-side verification
   // Note that we grab the value of '#g-recaptcha-response' and not just '#g-recaptcha'
   var captcha = document.querySelector('#g-recaptcha-response').value;
 
-  fetch('https://ar-testing-staging.herokuapp.com/', {
+  fetch('YOUR HEROKU APP URL HERE', {
     method:'POST',
     headers: {
       'Accept': 'application/json, text/plain, */*',
