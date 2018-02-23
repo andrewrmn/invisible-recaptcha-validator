@@ -1,5 +1,6 @@
-# Invisible Recaptcha Server-Side Verification
-Simple Express Server for invisible reCaptcha server-side verification
+# Invisible Recaptcha Server-Side Validator
+Simple Express Server for invisible reCaptcha server-side validation. Works great for static websites, in my case — a Jekyll website hosted on GitHub Pages. 
+
 
 ## Server-Side Instructions
 1. Register your site/ get your reCaptcha keys [here](https://www.google.com/recaptcha)
