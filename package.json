@@ -1,0 +1,16 @@
+{
+  "name": "recaptcha",
+  "version": "1.0.0",
+  "description": "Recaptcha server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "request": "^2.83.0"
+  }
+}
