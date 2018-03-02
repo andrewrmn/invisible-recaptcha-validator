@@ -5,7 +5,7 @@ Simple Express Server for invisible reCaptcha server-side validation. Works nice
 ## Instructions
 1. Register your site/ get your reCaptcha keys [here](https://www.google.com/recaptcha)
 2. Create a new [Heroku App](https://dashboard.heroku.com/apps)
-3. In your new Heroku App, go to settings and create a new Config Var called RECAPTCHA_SECRET and enter your secret key in the value field
+3. In your new Heroku App, go to settings and create a new Config Var called `RECAPTCHA_SECRET` and enter your secret key in the value field
 4. Clone this repo
 5. Deploy your app via the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) or hook up your GitHub repository via the Deploy tab in your Heroku App
 6. After you deploy your app, your app url should display 'reCaptcha verification'
