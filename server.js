@@ -31,8 +31,6 @@ app.post('/', (req, res) => {
   // Secret Key from Heroku Config Variable 'RECAPTCHA_SECRET'
   const secretKey = process.env.RECAPTCHA_SECRET;
 
-  console.log(secretKey);
-
   // Google's verification URL: https://developers.google.com/recaptcha/docs/verify
   const verifyUrl = `https://google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${req.body.captcha}&remoteip=${req.connection.remoteAddress}`;
 
